@@ -1,0 +1,21 @@
+{
+  "name": "tubitak",
+  "version": "1.0.0",
+  "description": "tübitak node express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo": "node mongo.js",
+    "psql": "node postgresql.js"
+  },
+  "author": "kerem",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "randexp": "^0.5.3",
+    "sequelize": "^6.28.0"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1em;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            padding: 1em;
+        }
+        form > input {
+            width: 20em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>patient form</h2>
+    <form method="get">
+        <label for="fname">enter patient first name</label>
+        <input type="text" name="fname">
+        <label for="lname">enter patient last name</label>
+        <input type="text" name="lname">
+        <input type="submit" formaction="/abo">
+    </form>
+</body>
+</html>
